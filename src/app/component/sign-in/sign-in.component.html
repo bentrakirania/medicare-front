@@ -1,0 +1,22 @@
+<div class="box">
+    <div id="box1"> 
+        
+        <form action="">
+       
+           
+            <input class="input"  type="email"  [(ngModel)]="User.email" name="first"  placeholder="Email" required ><br><br>
+            <input class="input" type="password" placeholder="Password" id="p" required [(ngModel)]="User.password" name="first" ><br><br>
+            <button id="b1" type="submit" class=" btn-primary" (click)="signin()"> Sign In</button><br><br>
+            
+            <p>Don't have an account? <a  routerLink="/sign-up" class="link-info">Register here</a></p>
+           
+        
+        </form>
+        </div>
+    <div id="box2"> 
+       
+        
+       
+    </div>
+   
+  </div>

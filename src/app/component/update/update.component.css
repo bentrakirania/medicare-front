@@ -1,0 +1,18 @@
+h2{
+    color: #007BFF !important;
+}
+#submit-button{
+    background-color: #007BFF !important;
+    width: 200px!important;
+    border-radius: 5px;
+    text-transform: capitalize!important;
+    margin-left: -20px!important;
+
+}
+#submit-button:hover{
+   opacity: 0.8!important;
+    
+}
+.row{
+    margin-top: -40px!important;
+}

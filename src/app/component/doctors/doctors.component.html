@@ -1,0 +1,28 @@
+<div class="row">
+   <div> <button type="button" class="btn btn-outline-primary b2" (click)="add()">Add doctor</button></div>
+    <div *ngFor="let doctor of doctors"  class="card mb-3 div" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img  width="400px" height="300px" [src]="'http://127.0.0.1:4000/getimage/'+doctor.image" class="img-fluid top" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title titre ">Dr {{doctor.firstname}}</h5>
+              <ul style="list-style-type: none;">
+                <li class="text-body-secondary">Speciality:{{doctor.speciality}}</li>
+                <li class="text-body-secondary" >Id:{{doctor.id}}</li>
+                <li class="text-body-secondary">phone:{{doctor.phone}}</li>
+               
+              </ul>
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary b" (click)="Deletedoctor(doctor._id)">delete</button>
+                <button type="button" class="btn btn-outline-primary " [routerLink]="['/updoctor',doctor._id]">uppdate</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+</div>

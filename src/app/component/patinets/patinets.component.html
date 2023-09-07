@@ -1,0 +1,29 @@
+<table class="table caption-top tab">
+    
+    <thead>
+      <tr>
+        <th scope="col" class="h"></th>
+        <th scope="col" class="h">First Name</th>
+        <th scope="col" class="h">Family Name</th>
+        <th scope="col" class="h">Email</th> 
+        <th scope="col" class="h">Phone</th>
+        <th scope="col" class="h">Age</th>
+        <th scope="col" class="h">Date</th>
+        <th scope="col"class="h">Delete</th>
+        <th scope="col" class="h">Update</th>
+
+         </tr>
+    </thead>
+    <tbody *ngFor="let patient of patients">
+        <tr>
+          <th scope="row"> </th>
+          <td class="td">{{patient.firstname}}</td>
+          <td class="td">{{patient.familyname}}</td>
+          <td class="td">{{patient.email}}</td>
+          <td class="td">{{patient.phone}}</td>
+          <td class="td">{{patient.age}}</td>
+          <td class="td">{{patient.date}}</td>
+          <td class="td"><button type="button" class="btn " style="color:  #007BFF ;" (click)="Deletepatient(patient._id)" >Delete</button></td>
+          <td class="td"><button type="button" class="btn " style="color:  #007BFF ;" [routerLink]="['/update',patient._id]">Update</button></td>
+        </tr>
+      </tbody>
